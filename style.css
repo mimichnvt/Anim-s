@@ -53,3 +53,74 @@ header{
 .menu .buy-li:hover a{
     color: #45d0e4;
 }
+/*description section*/
+.description{
+    height: calc(100vh - 80px);
+    padding:0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.left h1{
+    font-size: 50px;
+
+}
+.left{
+    width:60%;
+}
+.left p {
+    color: #999;
+    font-size: 14px;
+    margin-top:20px;
+    margin-bottom: 30px;
+
+}
+.left a{
+    margin-top:20px;
+    border: 1px solid #45d0e4;
+    text-transform: uppercase;
+    text-decoration: 0;
+    color: #45d0e4;
+    font-size: 14px;
+    padding: 10px 20px;
+    transition:0.5s;
+}
+.left a:hover{
+    letter-spacing: 1px;
+}
+.right{
+    width:40%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+}
+.right img{
+    height:500px;
+}
+/*responsive*/
+@media (max-width : 770px){
+    header .menu{
+        display:none;
+    }
+    .left{
+        background-color: rgba(0, 0, 0, 0.8);
+        width:100%;
+        padding: 30px;
+    }
+    .left h1{
+        font-size:15px;
+    }
+    .left p{
+        font-size:12px;
+    }
+    .right{
+        z-index: -1;
+        position: absolute;
+        height:100%;
+        width:100%;
+        top:0;
+        left:0;
+    }
+}
