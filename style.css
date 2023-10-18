@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.9);
+    position: relative;
+    height: 100vh;
+    overflow:hidden
+}
+span{
+    color: white;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8%;
+    height: 80px;
+}
+.logo{
+    color: rgb(70, 143, 206);
+    font-size: 35px;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu li{
+    margin:0 15px
+}
+.menu li a{
+    text-decoration: none;
+    color: #999;
+    text-transform: uppercase;
+    font-size:14px;
+    transition: 0.5;
+}
+.menu li a:hover{
+    color:white;
+}
+.buy-li{
+    border: 1px solid #45d0e4;
+    padding:5px 8px
+}
+.menu .buy-li a {
+    color: #45d0e4;
+}
+.menu .buy-li:hover a{
+    color: #45d0e4;
+}
